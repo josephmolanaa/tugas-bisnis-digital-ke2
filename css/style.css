@@ -9787,26 +9787,36 @@ h6,
 }
 
 .service-item {
-  height: 320px;
-  background: #F4F5F8;
-  transition: .5s;
-  overflow-x: auto; /* Membuat kontainer dapat digulir secara horizontal */
-  scroll-snap-type: x mandatory;
-  flex: 0 0 auto; 
-  scroll-snap-align: start;
-  margin-right: 10px;
+  height: 320px; /* Tinggi item */
+  background: #F4F5F8; /* Warna latar belakang */
+  transition: background-color 0.3s ease; /* Efek transisi saat hover */
+  border-radius: 10px; /* Sudut melengkung */
+  padding: 30px; /* Padding di dalam item */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+  display: flex; /* Menggunakan flexbox untuk penataan */
+  flex-direction: column; /* Mengatur arah konten ke kolom */
+  align-items: center; /* Mengatur konten agar terpusat */
+  justify-content: center; /* Mengatur konten agar terpusat secara vertikal */
+  margin: 10px; /* Jarak antar item */
 }
 
 .service-item:hover {
-  background: #222429;
+  background-color: #FFAA17; /* Warna latar belakang saat hover */
+  color: white; /* Mengubah warna teks saat hover */
+}
+
+.service-item i {
+  margin-bottom: 15px; /* Jarak antara ikon dan teks */
 }
 
 .service-item h4 {
-  transition: .5s;
+  font-size: 1.5rem; /* Ukuran font untuk judul */
+  margin-bottom: 10px; /* Jarak antara judul dan deskripsi */
 }
 
-.service-item:hover h4 {
-  color: #F4F5F8;
+.service-item p {
+  font-size: 1rem; /* Ukuran font untuk deskripsi */
+  text-align: center; /* Mengatur teks agar terpusat */
 }
 
 .portfolio-item .portfolio-btn {

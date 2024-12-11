@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <title>KlanIklan.ID</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <meta content="Marketing Apps" name="keywords">
+    <meta content="Marketing Apps" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon-gorilla.png" rel="icon" type="image/png">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -21,6 +21,13 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -103,46 +110,47 @@
     <!-- About End -->
     
 
-    <!-- Services Start -->
+   <!-- Services Start -->
 <div class="container-fluid py-5">
     <div class="container pt-5 pb-3">
         <h1 class="display-4 text-uppercase text-center mb-5">Our Creative Services</h1>
-        <div class="d-flex overflow-auto">
-            <div class="service-item rounded p-5 mb-4">
-                <i class="fa fa-3x fa-laptop-code text-primary mb-4"></i>
-                <h4 class="text-uppercase mb-4">Web <span class="d-block text-body">Design</span></h4>
-                <p class="m-0">Vero amet vero eos kasd justo ipsum diam sed elitr</p>
-            </div>
-            <div class="service-item rounded p-5 mb-4">
-                <i class="fa fa-3x fa-code text-primary mb-4"></i>
-                <h4 class="text-uppercase mb-4">Web <span class="d-block text-body">Development</span></h4>
-                <p class="m-0">Vero amet vero eos kasd justo ipsum diam sed elitr</p>
-            </div>
-            <div class="service-item rounded p-5 mb-4">
-                <i class="fa fa-3x fa-envelope-open-text text-primary mb-4"></i>
-                <h4 class="text-uppercase mb-4">Digital <span class="d-block text-body">Marketing</span></h4>
-                <p class="m-0">Vero amet vero eos kasd justo ipsum diam sed elitr</p>
-            </div>
+        <div class="owl-carousel service-carousel">
             <div class="service-item rounded p-5 mb-4">
                 <i class="fa fa-3x fa-edit text-primary mb-4"></i>
-                <h4 class="text-uppercase mb-4">Content <span class="d-block text-body">Writing</span></h4>
-                <p class="m-0">Vero amet vero eos kasd justo ipsum diam sed elitr</p>
+                <h4 class="text-uppercase mb-4">Marketing <span class="d-block text-body">Automation</span></h4>
+                <p class="m-0">Deliver the right message at the right time</p>
             </div>
-            <!-- Tambahkan lebih banyak item di sini -->
             <div class="service-item rounded p-5 mb-4">
+                <i class="fa fa-3x fa-pencil-alt text-primary mb-4"></i>
+                <h4 class="text-uppercase mb-4">Content Creator <span class="d-block text-body">Tools</span></h4>
+                <p class="m-0">Build content that captivates and converts</p>
+            </div>
+            <div class="service-item rounded p-5 mb-4">
+                <i class="fa fa-3x fa-share-alt text-primary mb-4"></i>
+                <h4 class="text-uppercase mb-4">Social Media <span class="d-block text-body">Marketing</span></h4>
+                <p class="m-0">Amplify the conversation across multiple channels</p>
+            </div>
+            <div class="service-item rounded p-5 mb-4">
+                <i class="fa fa-3x fa-laptop text-primary mb-4"></i>
+                <h4 class="text-uppercase mb-4">Websites <span class="d-block text-body">Creator </span></h4>
+                <p class="m-0">Create your branded web presence</p>
+            </div>
+            <div class="service-item rounded p-5 mb-4">
+                <i class="fa fa-3x fa-robot text-primary mb-4"></i>
+                <h4 class="text-uppercase mb-4">Ai <span class="d-block text-body">Marketing Tools</span></h4>
+                <p class="m-0">Say hello  to your AI growth assistant</p>
+            </div><div class="service-item rounded p-5 mb-4">
+                <i class="fa fa-3x fa-file-alt text-primary mb-4"></i>
+                <h4 class="text-uppercase mb-4">Templates <span class="d-block text-body">Creator </span></h4>
+                <p class="m-0">Customize pre-designed layouts</p>
+            </div><div class="service-item rounded p-5 mb-4">
                 <i class="fa fa-3x fa-chart-line text-primary mb-4"></i>
-                <h4 class="text-uppercase mb-4">SEO <span class="d-block text-body">Optimization</span></h4>
-                <p class="m-0">Vero amet vero eos kasd justo ipsum diam sed elitr</p>
-            </div>
-            <div class="service-item rounded p-5 mb-4">
-                <i class="fa fa-3x fa-bullhorn text-primary mb-4"></i>
-                <h4 class="text-uppercase mb-4">Social <span class="d-block text-body">Media Management</span></h4>
-                <p class="m-0">Vero amet vero eos kasd justo ipsum diam sed elitr</p>
+                <h4 class="text-uppercase mb-4">Report <span class="d-block text-body">And Analytics</span></h4>
+                <p class="m-0">Track sales & campaign performance</p>
             </div>
         </div>
     </div>
 </div>
-
 
 <!-- Services End -->
 
@@ -541,6 +549,28 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".service-carousel").owlCarousel({
+                items: 3, // Jumlah item yang ditampilkan
+                margin: 10, // Jarak antar item
+                nav: false, // Menampilkan tombol navigasi
+                dots: true, // Menampilkan titik navigasi
+                responsive: {
+                    0: {
+                        items: 1 // Jumlah item untuk layar kecil
+                    },
+                    600: {
+                        items: 2 // Jumlah item untuk layar sedang
+                    },
+                    1000: {
+                        items: 3 // Jumlah item untuk layar besar
+                    }
+                }
+            });
+        });
+        </script>
 </body>
 
 </html>
