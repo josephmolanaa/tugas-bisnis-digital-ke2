@@ -9787,17 +9787,17 @@ h6,
 }
 
 .service-item {
-  height: 320px; /* Tinggi item */
-  background: #F4F5F8; /* Warna latar belakang */
-  transition: background-color 0.3s ease; /* Efek transisi saat hover */
-  border-radius: 10px; /* Sudut melengkung */
-  padding: 30px; /* Padding di dalam item */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
-  display: flex; /* Menggunakan flexbox untuk penataan */
-  flex-direction: column; /* Mengatur arah konten ke kolom */
-  align-items: center; /* Mengatur konten agar terpusat */
-  justify-content: center; /* Mengatur konten agar terpusat secara vertikal */
-  margin: 10px; /* Jarak antar item */
+  height: 320px;
+  background: #F4F5F8;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
 }
 
 .service-item:hover {
